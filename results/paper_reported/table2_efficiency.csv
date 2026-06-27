@@ -1,0 +1,12 @@
+source,method,params_m,flops_g,model_size_mb,fps
+paper_reported,RIND,30.63,247.60,117.06,28.46
+paper_reported,CT-CrackSeg,22.88,78.94,87.37,66.00
+paper_reported,SimCrack,29.58,286.62,225.00,40.81
+paper_reported,Swin-UMamba,63.38,104.10,241.77,43.10
+paper_reported,VMamba,19.50,395.24,65.54,28.80
+paper_reported,VM-UNet,27.25,29.42,105.92,27.90
+paper_reported,PlainMamba,16.72,73.36,96.00,90.60
+paper_reported,FFM,55.43,260.07,211.00,83.50
+paper_reported,SCSegamba,3.05,18.16,37.00,17.90
+paper_reported,GLCP,46.30,33.72,177.00,202.60
+paper_reported,FGOS-Net,6.26,7.87,23.92,80.20

@@ -1,0 +1,9 @@
+source,dataset,method,mIoU,F1,Precision,clDice
+paper_reported,CHASEDB1,SimCrack,75.82,74.11,69.37,75.24
+paper_reported,CHASEDB1,VMamba,73.00,70.32,57.21,76.01
+paper_reported,CHASEDB1,SCSegamba,78.17,76.65,67.25,77.30
+paper_reported,CHASEDB1,FGOS-Net,80.45,79.12,76.71,83.35
+paper_reported,Massachusetts Roads,SimCrack,72.63,65.81,75.10,71.94
+paper_reported,Massachusetts Roads,VMamba,71.51,62.89,73.78,71.20
+paper_reported,Massachusetts Roads,SCSegamba,75.41,64.22,76.14,73.40
+paper_reported,Massachusetts Roads,FGOS-Net,79.83,69.32,80.99,80.86

@@ -1,0 +1,8 @@
+cff-version: 1.2.0
+message: "If you use FGOS-Net, please cite the ECCV 2026 paper."
+title: "Bridging the Geometry Mismatch: Frequency-Aware Anisotropic Serialization for Thin-Structure SSMs"
+authors:
+  - family-names: "Anonymous"
+    given-names: "ECCV 2026 Submission"
+year: 2026
+license: MIT

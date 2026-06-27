@@ -1,0 +1,15 @@
+project: FGOS-Net
+description: Current public architecture alias.
+
+model:
+  variant: current_best
+  in_channels: 3
+  num_classes: 1
+  encoder_dims: [32, 64, 128, 192]
+  encoder_depths: [2, 2, 2, 2]
+  decoder: hybrid_gfa
+  head: multi_branch_brm
+  asgp_mode: paper
+  asgp:
+    num_probes: 64
+    num_steps: 3

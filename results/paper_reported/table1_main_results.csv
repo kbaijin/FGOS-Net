@@ -1,0 +1,5 @@
+source,dataset,method,mIoU,F1,Precision,Recall,ODS,clDice
+paper_reported,DeepCrack,FGOS-Net,91.29,91.43,91.36,91.51,92.46,97.12
+paper_reported,Crack500,FGOS-Net,79.15,78.29,78.34,79.87,78.32,83.85
+paper_reported,CrackMap,FGOS-Net,80.75,77.82,76.27,87.94,79.82,92.48
+paper_reported,TUT,FGOS-Net,85.73,83.95,82.44,86.99,82.51,91.98

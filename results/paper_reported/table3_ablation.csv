@@ -1,0 +1,12 @@
+source,group,setting,mIoU,F1,Precision,Recall,ODS,params_m,flops_g,fps
+paper_reported,A,EEGG,91.29,91.43,91.36,91.51,92.46,,,
+paper_reported,B,T3_N64,91.29,91.43,91.36,91.51,92.46,,,80.20
+paper_reported,D,Standard Mamba,85.98,86.11,86.70,86.87,86.22,2.20,7.81,
+paper_reported,D,VMamba plus GFA and BRM,87.56,88.12,87.45,89.30,88.65,21.50,12.40,
+paper_reported,D,Baseline DWT plus Raster,86.44,86.97,87.09,87.26,86.97,6.09,7.80,
+paper_reported,D,DWT plus Cross-Scan,88.15,87.62,87.90,88.48,87.95,6.10,8.85,
+paper_reported,D,Static Gate,88.67,87.12,88.29,89.13,88.08,6.26,7.87,
+paper_reported,D,ASGP without FA-Scan,89.83,88.93,88.51,89.36,89.63,6.22,7.87,
+paper_reported,D,FA-Block,90.46,89.63,89.46,89.45,89.73,6.09,7.80,
+paper_reported,D,Without alignment,90.75,90.62,90.31,90.98,91.35,6.25,7.86,
+paper_reported,D,Full FGOS-Net,91.29,91.43,91.36,91.51,92.46,6.26,7.87,

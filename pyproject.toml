@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fgos-net"
+version = "0.1.0"
+description = "Clean PyTorch implementation of FGOS-Net for thin-structure segmentation."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "FGOS-Net Authors"}]
+dependencies = [
+  "torch>=2.1",
+  "PyYAML>=6.0",
+]
+
+[tool.setuptools.packages.find]
+include = ["fgos*"]
