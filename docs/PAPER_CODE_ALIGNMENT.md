@@ -16,12 +16,12 @@ Audit scope:
 | ASGP | `T=3`, `N=64` | full hybrid builder | `ActiveSpectralGeometricProbing` |
 | FA-Scan assignment | LL/HH Hilbert, LH horizontal, HL vertical | `freq_adaptive` route | `FrequencyAlignedScan.branch_modes` |
 | LGB policy | EEGG best row | gate policy in full builder | stage index policy |
-| Efficiency | 6.26M, 7.87G, 80.2 FPS | server profiling scripts | `paper_profile`, result CSV |
-| Runtime breakdown | appendix Table 4 | server profiling output | README table |
+| Efficiency verification | server-side profiling | internal profiling scripts | coming soon |
+| Runtime verification | server-side profiling | internal profiling output | coming soon |
 
 ## Open-Source Decisions
 
-- Keep model architecture and paper-reported result records.
+- Keep model architecture and paper-code mapping notes.
 - Do not publish weights yet.
 - Do not publish training, testing, benchmark, prediction, server sync, rebuttal,
   or baseline stub scripts in the first public tree.
@@ -30,6 +30,6 @@ Audit scope:
 
 ## Server Verification Required
 
-The local desktop environment is not the paper environment. Final parameter,
-FLOPs, FPS, and checkpoint claims should be verified on the RTX 3090 server
-before pushing a release tag.
+The local desktop environment is not the paper environment. Parameter, FLOPs,
+FPS, and checkpoint claims should be verified on the server before publishing
+weights or profiling records.

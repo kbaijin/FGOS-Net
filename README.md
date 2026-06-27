@@ -1,23 +1,34 @@
-# FGOS-Net
+# FGOS-Net 🚀
 
-Official architecture release for **FGOS-Net: Bridging the Geometry Mismatch: Frequency-Aware Anisotropic Serialization for Thin-Structure SSMs**.
+**FGOS-Net: Bridging the Geometry Mismatch: Frequency-Aware Anisotropic Serialization for Thin-Structure SSMs**
 
-This repository currently releases the model architecture and paper-reported metadata only. Training, evaluation, benchmark scripts, checkpoints, and server logs are intentionally not included in this public tree.
+FGOS-Net is a lightweight thin-structure segmentation architecture built around frequency-aware serialization and topology-conditioned detail injection.
 
 ![FGOS-Net architecture](assets/main_architecture.png)
 
-## Architecture
+## 📰 News
 
-FGOS-Net follows the implementation route used in the paper experiments:
+- **2026.06**: FGOS-Net has been accepted to the **ECCV 2026 Main Conference**.
+- **Code release**: The public repository currently provides the clean architecture implementation.
+- **Coming soon**: Training scripts, evaluation scripts, benchmark scripts, pretrained weights, and model zoo metadata.
 
-- FGOS encoder with four stages, dimensions `32-64-128-192`, depths `2-2-2-2`.
-- DWT/IDWT frequency decomposition and reconstruction.
-- HF-conditioned alignment before topology modeling.
-- FA-Scan with Hilbert traversal for LL/HH, horizontal traversal for LH, and vertical traversal for HL.
-- ASGP with `N=64`, `T=3`.
-- Hybrid GFA decoder and BRM head.
+## ✨ Highlights
 
-The public builder is:
+- **Frequency-geometric disentanglement** with DWT/IDWT.
+- **HF-conditioned alignment** before topology modeling.
+- **FA-Scan** for frequency-aware anisotropic serialization.
+- **ASGP** for topology-conditioned high-frequency detail filtering.
+- **Hybrid GFA decoder + BRM head** for multi-scale fusion and boundary refinement.
+
+## 🔧 Installation
+
+```bash
+conda env create -f environment.yml
+conda activate fgos-net
+pip install -e .
+```
+
+## 🚀 Quick Start
 
 ```python
 from fgos import build_fgosnet
@@ -30,62 +41,55 @@ model = build_fgosnet(
 )
 ```
 
-`variant="eccv2026_paper"` is aligned to the full hybrid architecture used by the paper code path. `variant="current_best"` is kept as a compatibility alias for the same clean architecture surface.
+Available variants:
 
-## Paper-Reported Profile
+- `eccv2026_paper`: paper-aligned architecture.
+- `current_best`: compatibility alias for the current clean architecture surface.
 
-The following numbers are reported by the paper and appendix. They should be verified on the server environment before publishing reproduced artifacts.
+## 🧩 Architecture Components
 
-| Input | GPU | Params | FLOPs | Size | FPS | Latency |
-| --- | --- | ---: | ---: | ---: | ---: | ---: |
-| `1x3x256x256` | RTX 3090 | 6.26M | 7.87G | 23.92MB | 80.2 | 12.47ms |
-
-Runtime breakdown from the appendix:
-
-| Module | Latency | Share |
-| --- | ---: | ---: |
-| Stem | 0.35ms | 2.8% |
-| FGOS Stage 1 | 2.65ms | 21.3% |
-| FGOS Stage 2 | 2.93ms | 23.5% |
-| FGOS Stage 3 | 3.00ms | 24.1% |
-| FGOS Stage 4 | 3.03ms | 24.3% |
-| GFA/BRM Head | 0.51ms | 4.1% |
+| Component | Role |
+| --- | --- |
+| FGOS Encoder | Four-stage thin-structure feature encoder |
+| DWT / IDWT | Frequency decomposition and reconstruction |
+| HF Align | Directional high-frequency guided local alignment |
+| FA-Scan | Frequency-aware serialization for topology modeling |
+| ASGP | Active spectral-geometric probing for detail selection |
+| GFA Decoder | Gated multi-scale feature aggregation |
+| BRM Head | Boundary refinement head |
 
 ![ASGP module](assets/asgp_module.png)
 
-![FA-Scan response](assets/fa_scan_response.png)
+## 📦 Repository Scope
 
-## Install
+Included now:
 
-```bash
-conda env create -f environment.yml
-conda activate fgos-net
-pip install -e .
-```
+- `fgos/`: model architecture implementation.
+- `configs/`: architecture configuration records.
+- `docs/`: dataset, model zoo, reproduction, and paper-code mapping notes.
+- `assets/`: paper figures used by the README.
 
-## Repository Scope
+Not included yet:
 
-Included:
+- pretrained weights
+- training scripts
+- evaluation scripts
+- benchmark scripts
+- inference scripts
+- server logs or private dataset paths
 
-- `fgos/`: public model architecture.
-- `configs/`: paper and clean architecture configuration records.
-- `results/paper_reported/`: manuscript table values, labeled as paper-reported.
-- `docs/`: dataset, model zoo, reproduction provenance, and paper-code mapping notes.
+## 🗺️ Roadmap
 
-Not included:
+- [ ] Release pretrained checkpoints.
+- [ ] Release training and evaluation scripts.
+- [ ] Release benchmark and profiling scripts.
+- [ ] Add model zoo entries with checkpoint provenance.
+- [ ] Add reproducibility notes for server-side experiments.
 
-- checkpoints or weights
-- training, evaluation, inference, benchmark, or server sync scripts
-- private dataset paths, operational logs, rebuttal build products, or baseline stubs
+## 🙏 Acknowledgements
 
-## Results
+We thank the authors of **SCSegamba** and **VMamba** for their valuable open-source contributions to structure-aware segmentation and vision state-space modeling.
 
-Paper tables are stored under `results/paper_reported/`. They are not local reproduction claims. A result should be promoted to reproduced only after recording checkpoint checksum, commit hash, dataset split, seed, server GPU, CUDA/PyTorch versions, and the exact evaluation command.
+## 📚 Citation
 
-## Acknowledgements
-
-We thank the authors and maintainers of related open-source work, including SCSegamba, VMamba, VM-UNet, Swin-UMamba, PlainMamba, SimCrack, CT-CrackSeg, RINDNet, FFM, and GLCP. Their public implementations and papers provide important references for thin-structure segmentation and vision state-space modeling.
-
-## Citation
-
-See `CITATION.cff`. Paper metadata should be updated after acceptance or public preprint release.
+The citation metadata will be updated after the official publication information is available.
