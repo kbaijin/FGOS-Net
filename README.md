@@ -1,6 +1,6 @@
 # FGOS-Net 🚀
 
-**FGOS-Net: Bridging the Geometry Mismatch: Frequency-Aware Anisotropic Serialization for Thin-Structure SSMs**
+**Bridging the Geometry Mismatch: Frequency-Aware Anisotropic Serialization for Thin-Structure SSMs**
 
 FGOS-Net is a lightweight thin-structure segmentation architecture built around frequency-aware serialization and topology-conditioned detail injection.
 
@@ -8,7 +8,7 @@ FGOS-Net is a lightweight thin-structure segmentation architecture built around 
 
 ## 📰 News
 
-- **2026.06**: FGOS-Net has been accepted to the **ECCV 2026 Main Conference**.
+- **2026.06**: Bridging the Geometry Mismatch: Frequency-Aware Anisotropic Serialization for Thin-Structure SSMs has been accepted to the **ECCV 2026 Main Conference**.
 - **Code release**: The public repository currently provides the clean architecture implementation.
 - **Coming soon**: Training scripts, evaluation scripts, benchmark scripts, pretrained weights, and model zoo metadata.
 
