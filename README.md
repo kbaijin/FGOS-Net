@@ -2,7 +2,7 @@
 
 **Bridging the Geometry Mismatch: Frequency-Aware Anisotropic Serialization for Thin-Structure SSMs**
 
-FGOS-Net is a lightweight thin-structure segmentation architecture built around frequency-aware serialization and topology-conditioned detail injection.
+FGOS-Net is a lightweight thin-structure segmentation architecture built around frequency-aware serialization and topology-conditioned detail injections.
 
 ![FGOS-Net architecture](assets/main_architecture.png)
 
