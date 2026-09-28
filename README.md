@@ -92,4 +92,15 @@ We thank the authors of **SCSegamba** and **VMamba** for their valuable open-sou
 
 ## 📚 Citation
 
-The citation metadata will be updated after the official publication information is available.
+If you use FGOS-Net, please cite our ECCV 2026 paper:
+
+```bibtex
+@inproceedings{bai2026bridging,
+  title={Bridging the Geometry Mismatch: Frequency-Aware Anisotropic Serialization for Thin-Structure SSMs},
+  author={Bai, Jin and Zhang, Huiyao and Wen, Qi and Li, Ningyang and Li, Shengyang and Rahman, Atta ur and Tian, Xiaolin},
+  booktitle={European Conference on Computer Vision},
+  pages={515--532},
+  year={2026},
+  organization={Springer}
+}
+```

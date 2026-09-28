@@ -1,8 +1,44 @@
 cff-version: 1.2.0
 message: "If you use FGOS-Net, please cite the ECCV 2026 paper."
-title: "Bridging the Geometry Mismatch: Frequency-Aware Anisotropic Serialization for Thin-Structure SSMs"
+title: "FGOS-Net"
 authors:
-  - family-names: "Anonymous"
-    given-names: "ECCV 2026 Submission"
-year: 2026
+  - family-names: Bai
+    given-names: Jin
+  - family-names: Zhang
+    given-names: Huiyao
+  - family-names: Wen
+    given-names: Qi
+  - family-names: Li
+    given-names: Ningyang
+  - family-names: Li
+    given-names: Shengyang
+  - family-names: Rahman
+    given-names: Atta ur
+  - family-names: Tian
+    given-names: Xiaolin
 license: MIT
+preferred-citation:
+  type: conference-paper
+  title: "Bridging the Geometry Mismatch: Frequency-Aware Anisotropic Serialization for Thin-Structure SSMs"
+  authors:
+    - family-names: Bai
+      given-names: Jin
+    - family-names: Zhang
+      given-names: Huiyao
+    - family-names: Wen
+      given-names: Qi
+    - family-names: Li
+      given-names: Ningyang
+    - family-names: Li
+      given-names: Shengyang
+    - family-names: Rahman
+      given-names: Atta ur
+    - family-names: Tian
+      given-names: Xiaolin
+  conference:
+    name: European Conference on Computer Vision
+  start: 515
+  end: 532
+  year: 2026
+  publisher:
+    name: Springer
